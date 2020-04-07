@@ -1,29 +1,47 @@
 package training.oop;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Student extends Person{
-    private String target;
     private int classNumber;
+    private List<Class> joinedClasses;
+    private String welcomeMessage;
+    private String assignClassLeaderMessage;
 
-    public String getTarget() {
-        return target;
+    public String getAssignClassLeaderMessage() {
+        return assignClassLeaderMessage;
     }
 
-    public void setTarget(String target) {
-        this.target = target;
+    public void setAssignClassLeaderMessage(Student student, Class class_) {
+        this.assignClassLeaderMessage = this.Introduce() + " " + student.getName() + " is the leader of Class " + class_.getClassNumber() + ".";
     }
 
-    public Student(String name, int age, String target, int classNumber) {
+    public Student(String name, int age) {
         super(name, age);
-        this.target = target;
-        this.classNumber = classNumber;
+        this.joinedClasses = new ArrayList<Class>();
+    }
+
+    public String getWelcomeMessage() {
+        return welcomeMessage;
+    }
+
+    public void setWelcomeMessage(Student student, Class class_) {
+        this.welcomeMessage = this.Introduce() + " Welcome " + student.getName() + " join Class " + class_.getClassNumber() + ".";
     }
 
     @Override
-    public String Introduce() {
+    protected String Introduce() {
         return "My name is " + this.name +
                 ". I am " + this.age +
                 " years old. " +
                 "I am a student of class " + this.classNumber + ". " +
-                "Coding for the glory of " + this.target + "\n";
+                "Coding for the glory of OOCL.";
+    }
+
+    protected void JoinClass(Class class_) {
+        class_.addStudentToClass(this);
+        this.classNumber = class_.getClassNumber();
+        this.joinedClasses.add(class_);
     }
 }

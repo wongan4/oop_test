@@ -10,7 +10,7 @@ public class Person {
     }
 
     protected String Introduce() {
-        return "My name is " + this.name + ". I am " + this.age + " years old.\n";
+        return "My name is " + this.name + ". I am " + this.age + " years old.";
     }
 
     public String getName() {
