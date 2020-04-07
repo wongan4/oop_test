@@ -18,7 +18,7 @@ public class Teacher extends Person{
     }
 
     public void setAssignClassLeaderMessage(Student student, Class class_) {
-        this.assignClassLeaderMessage = this.Introduce() + student.getName() + " is the leader of Class " + class_.getClassNumber() + ".";
+        this.assignClassLeaderMessage = this.Introduce() + " " + student.getName() + " is the leader of Class " + class_.getClassNumber() + ".";
     }
 
     public String getWelcomeMessage() {
@@ -40,6 +40,6 @@ public class Teacher extends Person{
 
     @Override
     protected String Introduce() {
-        return "My name is " + this.name + ". I am " + this.age + " years old. Teaching for the future of world.\n";
+        return "My name is " + this.name + ". I am " + this.age + " years old. Teaching for the future of world.";
     }
 }

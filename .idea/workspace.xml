@@ -52,7 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PersonTest">
+  <component name="RunManager" selected="JUnit.PersonTest and 2 more">
     <configuration name="ClassTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oop_test" />
       <extension name="coverage">
@@ -64,6 +64,18 @@
       <option name="PACKAGE_NAME" value="training.oop" />
       <option name="MAIN_CLASS_NAME" value="training.oop.ClassTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonTest and 2 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oop_test" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="training.oop.PersonTest" />
+        <pattern testClass="training.oop.TeacherTest" />
+        <pattern testClass="training.oop.StudentTest" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -113,28 +125,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeacherTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="oop_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="oop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="oop" />
-      <option name="MAIN_CLASS_NAME" value="oop.TeacherTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PersonTest and 2 more" />
         <item itemvalue="JUnit.PersonTest" />
         <item itemvalue="JUnit.StudentTest (1)" />
         <item itemvalue="JUnit.TeacherTest (1)" />
         <item itemvalue="JUnit.ClassTest" />
-        <item itemvalue="JUnit.TeacherTest" />
       </list>
     </recent_temporary>
   </component>

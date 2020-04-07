@@ -17,7 +17,7 @@ public class TeacherTest {
 
     @Test
     public void should_teacher_welcome_when_student_join_class() {
-        Student student = new Student("Tom", 21);
+        Student student = new Student("Tom", 18);
         Class class_ = new Class(2);
         Teacher teacher = new Teacher("Woody", 30);
         String answer = "My name is Woody. I am 30 years old. Teaching for the future of world. Welcome Tom join Class 2.";
@@ -25,7 +25,7 @@ public class TeacherTest {
         teacher.TeachClass(class_);
         student.JoinClass(class_);
 
-        assertThat(teacher.getWelcomeMessage().equals(answer));
+        assertEquals(teacher.getWelcomeMessage(), answer);
     }
 
     @Test
@@ -39,6 +39,6 @@ public class TeacherTest {
         student.JoinClass(class_);
         class_.assignStudentAsLeader(student);
 
-        assertThat(teacher.getAssignClassLeaderMessage().equals(answer));
+        assertEquals(teacher.getAssignClassLeaderMessage(), answer);
     }
 }
