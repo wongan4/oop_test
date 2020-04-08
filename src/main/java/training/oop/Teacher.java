@@ -7,6 +7,7 @@ public class Teacher extends Person{
     private List<Class> taughtClasses;
     private String welcomeMessage;
     private String assignClassLeaderMessage;
+    private static final int MAX_TAUGHT_CLASS_NUMBER = 5;
 
     public Teacher(String name, int age) {
         super(name, age);
@@ -30,8 +31,9 @@ public class Teacher extends Person{
     }
 
     protected void TeachClass(Class class_) {
-        if (this.taughtClasses.size() < 5) {
+        if (this.taughtClasses.size() < MAX_TAUGHT_CLASS_NUMBER) {
             class_.addTeacherToClass(this);
+            this.taughtClasses.add(class_);
         }
         else {
             System.out.println("ERROR: 1 teacher can only teach at most 5 classes");

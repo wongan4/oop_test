@@ -9,6 +9,11 @@ public class Student extends Person{
     private String welcomeMessage;
     private String assignClassLeaderMessage;
 
+    public Student(String name, int age) {
+        super(name, age);
+        this.joinedClasses = new ArrayList<Class>();
+    }
+
     public String getAssignClassLeaderMessage() {
         return assignClassLeaderMessage;
     }
@@ -17,10 +22,7 @@ public class Student extends Person{
         this.assignClassLeaderMessage = this.Introduce() + " " + student.getName() + " is the leader of Class " + class_.getClassNumber() + ".";
     }
 
-    public Student(String name, int age) {
-        super(name, age);
-        this.joinedClasses = new ArrayList<Class>();
-    }
+
 
     public String getWelcomeMessage() {
         return welcomeMessage;

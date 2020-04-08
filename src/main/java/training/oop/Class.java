@@ -40,8 +40,7 @@ public class Class {
     protected void addTeacherToClass(Teacher teacher) {
         if (this.teacher == null) {
             this.teacher = teacher;
-        }
-        else {
+        } else {
             System.out.println("ERROR: 1 class should only has 1 teacher");
         }
     }

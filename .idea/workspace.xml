@@ -52,7 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PersonTest and 2 more">
+  <component name="RunManager" selected="JUnit.TeacherTest (1)">
     <configuration name="ClassTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oop_test" />
       <extension name="coverage">
@@ -127,10 +127,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TeacherTest (1)" />
+        <item itemvalue="JUnit.StudentTest (1)" />
         <item itemvalue="JUnit.PersonTest and 2 more" />
         <item itemvalue="JUnit.PersonTest" />
-        <item itemvalue="JUnit.StudentTest (1)" />
-        <item itemvalue="JUnit.TeacherTest (1)" />
         <item itemvalue="JUnit.ClassTest" />
       </list>
     </recent_temporary>
